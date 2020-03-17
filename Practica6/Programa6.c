@@ -1,24 +1,26 @@
-#include<stdio.h>
-#include<stdlib.h>
-int main()
+# include<stdio.h>
+# include<stdlib.h>
+int  main ()
 {
-	system("Color 0c");
+	system ( " Color 0c " );
 	
-	int x,i;
-	float y,z;
-	printf("Escribe un  numero entero: ");
-	scanf("%d",&x);
+	int x=0, i=0;
+	float y=0, z;
+	
 	do
 	{
 		y=y+x;
 		i++;
-		printf("\nEscribe un numero entero: ");
+		printf("Escribe un n%cmero entero positivo: ",163);
 		scanf("%d",&x);
-	}while(x>=0);
+	}while(x >= 0);
+	if(i > 0)
+		i--;
+		
 	z=y/i;
-	printf("\n\nEl promedio de los numeros es de: %.2f",z);
+	printf("\nEl promedio de los n%cmeros ingresados es: %.2f",163,z);
 	
-	printf("\n\n");
-	system("Pause");
-	return 0;
+	printf ( "\n \n" );
+	system ( " Pause " );
+	return 0 ;
 }
